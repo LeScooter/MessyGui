@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mgui",
+  "name": "Mess GUI",
+  "description": "Simple mod that messes up GUI buttons",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["BoehMod"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
