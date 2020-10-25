@@ -59,7 +59,7 @@ public final class MessyGui {
             int yPosition = button.yPosition += getRandom(-maxChange, maxChange, random);
 
             //While the x/y positions are out of the screen, re-organize
-            while ((xPosition + buttonWidth) > event.gui.width || (yPosition + buttonHeight) > event.gui.height) {
+            while (xPosition < 0 || (xPosition + buttonWidth) > event.gui.width || yPosition < 0 || (yPosition + buttonHeight) > event.gui.height) {
                 xPosition = button.xPosition += getRandom(-maxChange, maxChange, random);
                 yPosition = button.yPosition += getRandom(-maxChange, maxChange, random);
             }
