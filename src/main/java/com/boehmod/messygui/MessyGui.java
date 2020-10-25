@@ -1,21 +1,18 @@
 package com.boehmod.messygui;
 
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.client.event.GuiOpenEvent;
 import net.minecraftforge.client.event.GuiScreenEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-import java.util.List;
 import java.util.Random;
 
 @Mod(modid = MessyGui.MODID, version = MessyGui.VERSION)
 public final class MessyGui {
+
     /**
      * The ID of the mod
      */
@@ -62,7 +59,7 @@ public final class MessyGui {
             int yPosition = button.yPosition += getRandom(-maxChange, maxChange, random);
 
             //While the x/y positions are out of the screen, re-organize
-            while((xPosition + buttonWidth) > event.gui.width || (yPosition + buttonHeight) > event.gui.height){
+            while ((xPosition + buttonWidth) > event.gui.width || (yPosition + buttonHeight) > event.gui.height) {
                 xPosition = button.xPosition += getRandom(-maxChange, maxChange, random);
                 yPosition = button.yPosition += getRandom(-maxChange, maxChange, random);
             }
