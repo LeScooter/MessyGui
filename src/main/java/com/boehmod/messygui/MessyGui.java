@@ -50,9 +50,6 @@ public final class MessyGui {
         //Set the max change value
         int maxChange = 45;
 
-        //Fetch a list of buttons from the event GUI
-        List<GuiButton> buttonList = ObfuscationReflectionHelper.getPrivateValue(GuiScreen.class, event.gui, "field_146292_n");
-
         //Iterate through each button
         event.buttonList.forEach(button -> {
 
